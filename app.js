@@ -20,7 +20,7 @@ var session = require('express-session'),
     methodOverride = require('method-override');
 
 var app = express();
-app.locals.appTitle = 'blog-express';
+app.locals.appTitle = 'tobias-zils';
 
 // Mongoskin Middleware for collections
 app.use(function(req, res, next) {

@@ -3,20 +3,26 @@ html
     title = appTitle
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     script(type="text/javascript", src="/js/blog.js")
+    link(type="text/css", rel="stylesheet", media=media, href="/styles/main.css")
 
   body
-    #wrap
+    header
+      nav
+        block navi
+
+    main#wrap
       .container
-        h1.page-header = appTitle
+        h1.page-header= appTitle
         p.lead Welcome to example from Express
 
         block page
-        block header
-          div
+
         block alert
           div.alert.alert-warning.hidden
+
         .content
           block content
+
     block footer
       footer
         .container
